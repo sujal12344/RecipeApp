@@ -1,5 +1,5 @@
-import { Heart, Home } from "lucide-react";
-import { Link } from "react-router-dom";
+import DesktopSidebar from "./Sidebar/DesktopSidebar";
+import MobileSidebar from "./Sidebar/MobileSidebar";
 
 const Sidebar = () => {
   return (
