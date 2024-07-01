@@ -1,6 +1,10 @@
 import { Heart, HeartPulse, Soup } from "lucide-react";
 import { useState } from "react";
 
+const getTwoValuesFromArray = (arr) => {
+  return [arr[0], arr[1]];
+};
+
 const RecipeCard = ({ recipe, bg, badge }) => {
   const healthLabels = getTwoValuesFromArray(recipe.healthLabels);
   const [isFavorite, setIsFavorite] = useState(
