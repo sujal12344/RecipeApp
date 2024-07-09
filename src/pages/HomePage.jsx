@@ -19,7 +19,7 @@ const HomePage = () => {
       );
       const data = await res.json();
       setRecipes(data.hits);
-      console.log(data.hits);
+      console.log(data);
     } catch (error) {
       console.log(error.message);
     } finally {
@@ -28,7 +28,7 @@ const HomePage = () => {
   };
 
   useEffect(() => {
-    fetchRecipes("chicken");
+    fetchRecipes("paneer");
   }, []);
 
   const handleSearchRecipe = (e) => {
